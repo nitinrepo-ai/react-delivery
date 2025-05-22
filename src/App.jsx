@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Veg from "./Veg";
-import Nonveg from "./Nonveg";
+import Nonveg from "./NonVeg";
 import Cart from "./Cart";
 import Orders from "./Orders";
 import AboutUs from "./AboutUs";
