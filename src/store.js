@@ -5,7 +5,7 @@ const productSlice = createSlice({
   name: 'products',
   initialState: {
     veg: [
-      { name: 'tomato', price: 50.0, image: "/public/tomato.jpg" },
+      { name: 'tomato', price: 50.0, image: "./public/tomato.jpg" },
       { name: 'carrot', price: 60.0, image: "./public/carrot.jpg" },
       { name: 'potatoes', price: 40.0, image: "./public/potato.jpg" },
       { name: 'onion', price: 50.0, image: "./public/onion.jpg" },
