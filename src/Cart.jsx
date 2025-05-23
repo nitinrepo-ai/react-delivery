@@ -189,7 +189,7 @@ function Cart() {
               </h2>
             </div>
           )}
-          <img src='/images/CART.jpg' width={700} height={700} />
+          <img src='https://atlas-content-cdn.pixelsquid.com/stock-images/market-cart-silver-shopping-WEJBXZ1-600.jpg' width={700} height={700} />
           <h1 style={{ textAlign: 'center', color: 'black' }}>Cart is Empty</h1>
         </>
       )}
