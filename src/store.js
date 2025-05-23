@@ -36,6 +36,9 @@ const productSlice = createSlice({
       { name: 'Crispello', price: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtswX6KdoRK-A4vKp5P5YJbVydTXEbKSX3g&s" },
       { name: 'Bourbon', price: 50, image: "https://www.bigbasket.com/media/uploads/p/l/100012354_30-britannia-bourbon-chocolate-cream-biscuits.jpg" },
       { name: 'Kisme', price: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpck1RM--i247qf00DdmK2zYrqIxOIm6Ffuw&s" },
+      {name: 'kitcat', price: 15, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uWQRjYH_DK05VJHFNmT2bCKukMlVff_5tw&s"},
+      {name: 'kinderjoy', price:20, image:"https://5.imimg.com/data5/SELLER/Default/2023/8/333051735/VM/GO/JE/194242257/kinder-joy-chocolate-500x500.webp"},
+      {name: 'melody', price:5, image:"https://5.imimg.com/data5/SELLER/Default/2023/3/294864846/GB/LF/DN/123554138/melody-jpg.jpg"}
     ]
   },
   reducers: {}
