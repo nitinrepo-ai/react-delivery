@@ -29,13 +29,13 @@ const productSlice = createSlice({
       { name: 'pork', price: 50.0, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTH1okpy4vBBwPTGXCcitPA_V_pBbIAnXCzg&s" },
     ],
     chocolate: [
-      { name: 'Dairy-Milk', price: 20, image: "./public/Dairy-milk.jpeg" },
-      { name: '5Star', price: 25, image: "./public/5Star.jpeg" },
-      { name: 'Fuse', price: 30, image: "./public/fuse.jpeg" },
-      { name: 'Munch', price: 30, image: "./public/munch.jpeg" },
-      { name: 'Crispello', price: 10, image: "./public/Crispello.jpeg" },
-      { name: 'Bourbon', price: 50, image: "./public/bournbon.jpeg" },
-      { name: 'Kisme', price: 5, image: "./public/kisme.jpeg" },
+      { name: 'Dairy-Milk', price: 20, image: "https://c8.alamy.com/comp/2ATRCKH/cadbury-dairy-milk-chocolate-bar-2ATRCKH.jpg" },
+      { name: '5Star', price: 25, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea22jdZKTkuaGdfyJJqlbTdoNAYIOp6YAgQ&s" },
+      { name: 'Fuse', price: 30, image: "https://5.imimg.com/data5/SELLER/Default/2022/4/OL/OX/QX/5116174/aadsf-adsaaaaaaaafffaf.jpg" },
+      { name: 'Munch', price: 30, image: "https://5.imimg.com/data5/SELLER/Default/2023/11/358930650/BY/FT/XL/39066208/munch.jpg" },
+      { name: 'Crispello', price: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtswX6KdoRK-A4vKp5P5YJbVydTXEbKSX3g&s" },
+      { name: 'Bourbon', price: 50, image: "https://www.bigbasket.com/media/uploads/p/l/100012354_30-britannia-bourbon-chocolate-cream-biscuits.jpg" },
+      { name: 'Kisme', price: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpck1RM--i247qf00DdmK2zYrqIxOIm6Ffuw&s" },
     ]
   },
   reducers: {}
