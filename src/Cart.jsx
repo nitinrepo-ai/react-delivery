@@ -171,7 +171,7 @@ function Cart() {
               {PaymentMethod === 'qr' && (
                 <div className="qr section">
                   <h4>Scan UPI QR to pay ₹{finalPrice}</h4>
-                  <QRCode value={`upi://pay?pa=nitinchaudhari12349@oksbi=Nitin&am=${finalPrice}&cu=INR`} />
+                  <QRCode value={`upi://pay?pa=nitinchaudhari12349@oksbi&pn=Nitin&am=${finalPrice}&cu=INR`} />
                   <p>Use any Payment App like Gpay, PhonePay, Paytem, etc</p>
                 </div>
               )}
