@@ -23,9 +23,9 @@ function SignUp() {
       backgroundColor: "#f9f9f9",
       borderRadius: "10px",
       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      fontFamily: "'Segoe UI', sans-serif"
-          margin-left: 622px;
-    margin-top: 234px;
+      fontFamily: "'Segoe UI', sans-serif",
+      margin-left: "622px",
+    margin-top: "234px"
       
     }}>
       <h2 style={{
