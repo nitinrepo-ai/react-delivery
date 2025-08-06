@@ -107,7 +107,7 @@ function Orders() {
 
   return (
     <div style={styles.outerWrapper}>
-      <h2 style={styles.header}>🧾 Your Order History</h2>
+      <h2 style={styles.header}>🧾 Your Order </h2>
       {orderProduct.length === 0 ? (
         <div style={styles.noOrders}>
           <img
