@@ -4,18 +4,17 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-   outerWrapper: {
+  outerWrapper: {
   backgroundColor: '#f4f6f8',
   minHeight: '30vh',
   padding: '40px 20px',
   fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-   // ⬅️ Fix: Centers the container
-  display: 'block',           // ⬅️ Fix: Correct casing
+  display: 'block',
   width: '400px',
   marginTop: '80px',
   marginLeft: '550px',
+  // marginBottom: '80px', ← not present, but say you added it
 },
-
     header: {
       textAlign: 'center',
       color: '#333',
