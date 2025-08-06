@@ -6,7 +6,7 @@ function Orders() {
   const styles = {
     outerWrapper: {
       backgroundColor: '#f4f6f8',
-      minHeight: '100vh',
+      minHeight: '40vh',
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
