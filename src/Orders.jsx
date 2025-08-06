@@ -6,11 +6,11 @@ function Orders() {
   const styles = {
     outerWrapper: {
       backgroundColor: '#f4f6f8',
-      minHeight: '30vh',
+      minHeight: '100vh',
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: '550px';
+      marginLeft: "550px"
     },
     header: {
       textAlign: 'center',
@@ -75,7 +75,7 @@ function Orders() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '20vh',
+      height: '50vh',
       fontSize: '24px',
       color: '#777',
       fontWeight: '500',
@@ -109,7 +109,14 @@ function Orders() {
     <div style={styles.outerWrapper}>
       <h2 style={styles.header}>🧾 Your Order History</h2>
       {orderProduct.length === 0 ? (
-        <div style={styles.noOrders}>🛒 No purchase History available</div>
+        <div style={styles.noOrders}>
+          <img
+            src="https://png.pngtree.com/png-clipart/20230930/original/pngtree-cancle-order-icon-png-image_13041763.png"
+            alt="No Orders"
+            style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
+          />
+          🛒 No purchase History available
+        </div>
       ) : (
         <ul style={styles.ordersGrid}>{orderItemsList}</ul>
       )}
