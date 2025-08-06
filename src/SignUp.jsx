@@ -43,7 +43,7 @@ function SignUp() {
             placeholder="Username"
             {...register('username', { required: true })}
             style={{
-              width: "100%",
+              width: "70%",
               padding: "10px",
               fontSize: "14px",
               borderRadius: "5px",
@@ -59,7 +59,7 @@ function SignUp() {
             placeholder="Password"
             {...register('password', { required: true })}
             style={{
-              width: "100%",
+              width: "70%",
               padding: "10px",
               fontSize: "14px",
               borderRadius: "5px",
