@@ -25,7 +25,7 @@ function SignUp() {
       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
       fontFamily: "'Segoe UI', sans-serif",
       marginLeft: "560px",
-      marginTop: "100px",
+      marginTop: "100px";
      
       
     }}>
