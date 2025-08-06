@@ -4,16 +4,16 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-    outerWrapper: {
-      backgroundColor: '#f4f6f8',
-      minHeight: '30vh',
-      padding: '40px 20px',
-      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-      marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: '548px',
-      display:"block",
-       width:"400px",
-    },
+  outerWrapper: {
+    backgroundColor: '#f4f6f8',
+    minHeight: '30vh',
+    padding: '40px 20px',
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    marginTop: '80px', // GAP BELOW NAVBAR
+    marginLeft: '548px',
+    display: 'block',   // ✅ fixed casing
+    width: '400px',
+  },
     header: {
       textAlign: 'center',
       color: '#333',
