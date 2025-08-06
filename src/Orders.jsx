@@ -10,7 +10,7 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: "548px";
+      marginLeft: '548px';
     },
     header: {
       textAlign: 'center',
