@@ -1,46 +1,111 @@
 import { useSelector } from "react-redux";
 
 function Orders() {
-
   const orderProduct = useSelector(globalState => globalState.Orders);
 
-  
-        const orderItemsList = orderProduct.map((orders, index) => (
-          <li key={index} className="order-entry">
-            <ul>
-              <p><strong>order ID:</strong>{orders.orderId}</p>
-              <p><strong>Order Date:</strong> {orders.date}</p>
-            <ul className="order-items">
-              {orders.items.map((item, index) => (
-                <li key={index} className="order-item">
-                  <img src={item.image} alt={item.name} width={50} height={50} />
-                  <p><strong>Items:</strong>{item.name}</p>
-                  <p><strong>Price:</strong>{item.price.toFixed(2)}</p>
-                  <p><strong>Quantity:</strong>{item.quantity}</p>
-                  <p><strong>Total:</strong>{item.price * item.quantity}</p>
-                </li>
-              ))}
-            </ul>
-            <p><strong>Total Paid:</strong> ₹{orders.finalPrice.toFixed(2)}</p>
-            </ul>
-          </li>
-        ));
+  const styles = {
+    outerWrapper: {
+      backgroundColor: '#f4f6f8', // light neutral background
+      minHeight: '100vh',
+      padding: '40px 20px',
+      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    },
+    header: {
+      textAlign: 'center',
+      color: '#333',
+      marginBottom: '40px',
+      fontSize: '32px',
+      fontWeight: '600',
+    },
+    ordersGrid: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '24px',
+      justifyContent: 'center',
+    },
+    orderEntry: {
+      backgroundColor: '#ffffff',
+      padding: '24px',
+      borderRadius: '12px',
+      boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+      width: '360px',
+      listStyle: 'none',
+      transition: 'transform 0.3s ease',
+    },
+    orderInfo: {
+      marginBottom: '16px',
+      borderBottom: '1px solid #e0e0e0',
+      paddingBottom: '12px',
+      fontSize: '15px',
+      color: '#444',
+    },
+    orderItemsList: {
+      listStyle: 'none',
+      padding: 0,
+      margin: 0,
+    },
+    orderItem: {
+      backgroundColor: '#f9fafb',
+      marginBottom: '10px',
+      borderRadius: '8px',
+      padding: '12px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      fontSize: '14px',
+      color: '#333',
+    },
+    orderImage: {
+      width: '60px',
+      height: '60px',
+      objectFit: 'cover',
+      borderRadius: '5px',
+      marginBottom: '10px',
+    },
+    totalPaid: {
+      marginTop: '15px',
+      fontWeight: '600',
+      color: '#2e7d32',
+      fontSize: '16px',
+      textAlign: 'right',
+    },
+    noOrders: {
+      textAlign: 'center',
+      fontSize: '18px',
+      color: '#777',
+      paddingTop: '50px',
+    },
+  };
 
+  const orderItemsList = orderProduct.map((orders, index) => (
+    <li key={index} style={styles.orderEntry}>
+      <div style={styles.orderInfo}>
+        <p><strong>Order ID:</strong> {orders.orderId}</p>
+        <p><strong>Date:</strong> {orders.date}</p>
+      </div>
+      <ul style={styles.orderItemsList}>
+        {orders.items.map((item, idx) => (
+          <li key={idx} style={styles.orderItem}>
+            <img src={item.image} alt={item.name} style={styles.orderImage} />
+            <p><strong>Item:</strong> {item.name}</p>
+            <p><strong>Price:</strong> ₹{item.price.toFixed(2)}</p>
+            <p><strong>Qty:</strong> {item.quantity}</p>
+            <p><strong>Total:</strong> ₹{(item.price * item.quantity).toFixed(2)}</p>
+          </li>
+        ))}
+      </ul>
+      <p style={styles.totalPaid}>Total Paid: ₹{orders.finalPrice.toFixed(2)}</p>
+    </li>
+  ));
 
   return (
-    <div className="orders-container">
-      <h2>Purchase History</h2>
-
-      {
-        orderProduct.length === 0 ? (
-          <p>No Purchase Itmes Are Here.....</p>
-        ):(
-          <>
-          <h1>Your Orders</h1>
-          <ol>{orderItemsList}</ol>
-          </>
-        )
-      }
+    <div style={styles.outerWrapper}>
+      <h2 style={styles.header}>🧾 Your Order History</h2>
+      {orderProduct.length === 0 ? (
+        <p style={styles.noOrders}>No purchase items found.</p>
+      ) : (
+        <ul style={styles.ordersGrid}>{orderItemsList}</ul>
+      )}
     </div>
   );
 }
