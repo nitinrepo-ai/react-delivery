@@ -1,13 +1,14 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 import './store';
 import './Veg.css';
-import { AddToCart } from './store';
-import { useState } from 'react';
+import { AddToCart } from "./store";
+import { useState } from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from "react-toastify";
 
-function Nonveg() {
-const dispatch = useDispatch();
+
+function NonVeg() {
+  const dispatch = useDispatch();
   const nonvegproducts = useSelector(globalState => globalState.products.nonveg);
 
   const [selectedRanges, setSelectedRanges] = useState([]);
@@ -16,10 +17,10 @@ const dispatch = useDispatch();
     { label: "Below ₹100", min: 0, max: 100 },
     { label: "₹101 - ₹200", min: 101, max: 200 },
     { label: "₹201 - ₹300", min: 201, max: 300 },
-    { label: "₹301 - ₹400", min: 201, max: 400 },
-    { label: "₹401 - ₹500", min: 301, max: 500 },
-    { label: "₹501 - ₹600", min: 401, max: 600 },
-    { label: "Above ₹500", min: 501, max: Infinity }
+    { label: "₹301 - ₹400", min: 301, max: 400 },
+    { label: "₹401 - ₹500", min: 401, max: 500 },
+    { label: "₹501 - ₹600", min: 501, max: 600 },
+    { label: "Above ₹601", min: 601, max: Infinity }
   ];
 
   const handleRangeChange = (range) => {
@@ -37,23 +38,22 @@ const dispatch = useDispatch();
         selectedRanges.some(range => product.price >= range.min && product.price <= range.max)
       );
 
-  const nonvegListItems = filteredProducts.map((product, index) => (
+  const vegListItems = filteredProducts.map((product, index) => (
     <li key={index}>
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.price} Rs</p>
-      <button onClick={() => {dispatch(AddToCart(product));toast.success('item added to cart') }}>Add to Cart</button>
+      <button onClick={() => {dispatch(AddToCart(product));toast.success('item added to cart')}}>Add to Cart</button>
     </li>
   ));
-
+ 
   return (
     <>
-      <h1 style={{ textAlign: "center", color: 'green' }}>NonVeg Items</h1>
-       <ToastContainer position="top-right" autoClose={5000}/>
-        
-        
-      <div className="sidebar">
-           
+      <h1 style={{ textAlign: "center", color: 'green' }}>Veg Items</h1>
+
+      <div className="container">
+        <ToastContainer position="top-right" autoClose={5000}/>
+        <div className="sidebar">
           <strong>Filter by Price:</strong>
           {priceRanges.map((range, index) => (
             <div key={index}>
@@ -71,13 +71,12 @@ const dispatch = useDispatch();
 
         <div className="product-list">
           <ol>
-            {nonvegListItems}
+            {vegListItems}
           </ol>
         </div>
+      </div>
     </>
   );
 }
 
-export default Nonveg;
-
-
+export default NonVeg;
