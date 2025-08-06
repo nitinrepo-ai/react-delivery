@@ -11,7 +11,8 @@ function Orders() {
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
       Display:"block",
-      width:"400px"
+      width:"400px",
+      marginLeft: '550px';
     },
     header: {
       textAlign: 'center',
