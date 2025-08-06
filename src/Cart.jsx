@@ -100,7 +100,7 @@ function Cart() {
         name: item.name,
         price: (item.price * item.quantity).toFixed(2),
         units: item.quantity,
-        image_url:item.image
+        image: item.image
       })),
       cost: {
         shipping: shipping,
@@ -189,6 +189,7 @@ function Cart() {
               </h2>
             </div>
           )}
+          
           <img src='https://atlas-content-cdn.pixelsquid.com/stock-images/market-cart-silver-shopping-WEJBXZ1-600.jpg' width={700} height={700} />
           <h1 style={{ textAlign: 'center', color: 'black' }}>Cart is Empty</h1>
         </>
