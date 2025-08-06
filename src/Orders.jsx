@@ -111,7 +111,7 @@ function Orders() {
       {orderProduct.length === 0 ? (
         <div style={styles.noOrders}>
           <img
-            src="https://png.pngtree.com/png-clipart/20230930/original/pngtree-cancle-order-icon-png-image_13041763.png"
+            src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-cancle-order-icon-png-image_4959784.png"
             alt="No Orders"
             style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
           />
