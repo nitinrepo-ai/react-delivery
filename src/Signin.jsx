@@ -16,7 +16,7 @@ function SignIn() {
 
   // Enhanced Inline Styles
   const containerStyle = {
-    height: '100vh',
+    height: '50vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
