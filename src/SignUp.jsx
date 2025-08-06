@@ -24,8 +24,8 @@ function SignUp() {
       borderRadius: "10px",
       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
       fontFamily: "'Segoe UI', sans-serif",
-      marginLeft: "120px",
-      marginTop: "234px",
+      marginLeft: "5600px",
+      marginTop: "120px",
      
       
     }}>
