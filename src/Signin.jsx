@@ -22,6 +22,8 @@ function SignIn() {
     alignItems: 'center',
     background: 'linear-gradient(to right, #f8f9fa)',
     fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
+     marginTop:"168px",
+     marginLeft: "548px",
   };
 
   const formStyle = {
