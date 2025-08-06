@@ -4,17 +4,16 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-  outerWrapper: {
-  backgroundColor: '#f4f6f8',
-  minHeight: '30vh',
-  padding: '40px 20px',
-  fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-  display: 'block',
-  width: '400px',
-  marginTop: '80px',
-  marginLeft: '550px',
-  // marginBottom: '80px', ← not present, but say you added it
-},
+    outerWrapper: {
+      backgroundColor: '#f4f6f8',
+      minHeight: '30vh',
+      padding: '40px 20px',
+      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+      marginTop: '80px', // GAP BELOW NAVBAR
+      marginLeft: "550px",
+      Display:"block",
+      width:"400px"
+    },
     header: {
       textAlign: 'center',
       color: '#333',
@@ -110,7 +109,7 @@ function Orders() {
 
   return (
     <div style={styles.outerWrapper}>
-      <h2 style={styles.header}>🧾 Your Order History..</h2>
+      <h2 style={styles.header}>🧾 Your Order History</h2>
       {orderProduct.length === 0 ? (
         <div style={styles.noOrders}>
           <img
