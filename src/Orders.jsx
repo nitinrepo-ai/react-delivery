@@ -10,9 +10,13 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginRight: '550px',
-      display:"block",
-      
+
+      // ✅ FIXED: Removed invalid "marginRight"
+      // ✅ ADDED: Safer responsive layout
+      width: '400px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      display: 'block', // ✅ correct casing
     },
     header: {
       textAlign: 'center',
