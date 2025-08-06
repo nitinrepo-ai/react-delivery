@@ -12,6 +12,8 @@ function Orders() {
   margin: '80px auto 0 auto', // ⬅️ Fix: Centers the container
   display: 'block',           // ⬅️ Fix: Correct casing
   width: '400px',
+  marginTop: '80px',
+  marginLeft: '550px',
 },
 
     header: {
