@@ -10,7 +10,7 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: "550px";
+      marginLeft: "550px"
     },
     header: {
       textAlign: 'center',
@@ -111,7 +111,7 @@ function Orders() {
       {orderProduct.length === 0 ? (
         <div style={styles.noOrders}>
           <img
-            src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-cancle-order-icon-png-image_4959784.png"
+            src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"
             alt="No Orders"
             style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
           />
