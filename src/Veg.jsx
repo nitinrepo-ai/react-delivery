@@ -76,30 +76,7 @@ function Veg() {
         </div>
       </div>
     </>
-  );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  );  
 }
 
 export default Veg;
