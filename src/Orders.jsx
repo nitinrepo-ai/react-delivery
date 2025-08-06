@@ -9,7 +9,7 @@ function Orders() {
   minHeight: '30vh',
   padding: '40px 20px',
   fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-  margin: '80px auto 0 auto', // ⬅️ Fix: Centers the container
+   // ⬅️ Fix: Centers the container
   display: 'block',           // ⬅️ Fix: Correct casing
   width: '400px',
   marginTop: '80px',
