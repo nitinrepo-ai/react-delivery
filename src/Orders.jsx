@@ -10,6 +10,7 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
+      marginLeft:"550px"
     },
     header: {
       textAlign: 'center',
@@ -71,10 +72,15 @@ function Orders() {
       textAlign: 'right',
     },
     noOrders: {
-      textAlign: 'center',
-      fontSize: '18px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '20vh',
+      fontSize: '24px',
       color: '#777',
-      paddingTop: '50px',
+      fontWeight: '500',
+      textAlign: 'center',
+      flexDirection: 'column',
     },
   };
 
@@ -103,7 +109,7 @@ function Orders() {
     <div style={styles.outerWrapper}>
       <h2 style={styles.header}>🧾 Your Order History</h2>
       {orderProduct.length === 0 ? (
-        <p style={styles.noOrders}>No purchase items found.</p>
+        <div style={styles.noOrders}>🛒 No purchase History available</div>
       ) : (
         <ul style={styles.ordersGrid}>{orderItemsList}</ul>
       )}
