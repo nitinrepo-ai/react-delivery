@@ -22,7 +22,7 @@ function SignIn() {
     alignItems: 'center',
     background: 'linear-gradient(to right, #f8f9fa)',
     fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
-     marginTop:"140px",
+     marginTop:"120px",
      marginLeft: "548px",
   };
 
