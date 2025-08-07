@@ -4,19 +4,19 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-    outerWrapper: {
-      backgroundColor: '#f4f6f8',
-      minHeight: '30vh',
-      padding: '40px 20px',
-      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-      marginTop: '80px', // GAP BELOW NAVBAR
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
-      boxSizing: 'border-box',
-      marginLeft: '550px', // Added margin-left as requested
-    },
+   outerWrapper: {
+    backgroundColor: '#f4f6f8',
+    minHeight: '30vh',
+    padding: '40px 20px',
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    marginTop: '80px',// GAP BELOW NAVBAR
+    display: "flex",
+    justifyContent: "center", // Center horizontally
+    alignItems: "center",     // Center vertically
+    width: "100%",
+    boxSizing: 'border-box',
+   
+  },
     header: {
       textAlign: 'center',
       color: '#333',
@@ -35,10 +35,10 @@ function Orders() {
       padding: '24px',
       borderRadius: '12px',
       boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-      width: 'calc(33.33% - 24px)',
+      width: 'calc(33.33% - 24px)', // Make each order card 1/3 of the container's width
       listStyle: 'none',
       transition: 'transform 0.3s ease',
-      boxSizing: 'border-box',
+      boxSizing: 'border-box', // To make sure padding is included in width calculation
     },
     orderInfo: {
       marginBottom: '16px',
@@ -88,11 +88,6 @@ function Orders() {
       textAlign: 'center',
       flexDirection: 'column',
     },
-    noOrdersImage: {
-      width: '150px',
-      marginBottom: '20px',
-      opacity: 0.8,
-    },
   };
 
   const orderItemsList = orderProduct.map((orders, index) => (
@@ -117,15 +112,13 @@ function Orders() {
   ));
 
   return (
-    <div style={styles.outerWrapper}>
+    <div className="outerWrapper">
       <div style={{ width: '100%', maxWidth: '1200px', padding: '0 20px' }}>
         <h2 style={styles.header}>🧾 Your Order History.</h2>
         {orderProduct.length === 0 ? (
           <div style={styles.noOrders}>
-            <img
-              src="https://via.placeholder.com/150"
-              alt="No Orders"
-              style={styles.noOrdersImage}
+           <img src="https://via.placeholder.com/150" alt="test" />
+              style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
             />
             🛒 No purchase History available
           </div>
