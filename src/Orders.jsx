@@ -113,7 +113,7 @@ function Orders() {
   ));
 
   return (
-    <div style={styles.outerWrapper}>
+    <div className="outerWrapper">
       <div style={{ width: '100%', maxWidth: '1200px', padding: '0 20px' }}>
         <h2 style={styles.header}>🧾 Your Order History.</h2>
         {orderProduct.length === 0 ? (
