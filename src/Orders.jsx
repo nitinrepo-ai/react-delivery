@@ -4,19 +4,18 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-    outerWrapper: {
       backgroundColor: '#f4f6f8',
-      minHeight: '30vh',
-      padding: '40px 20px',
-      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-      marginTop: '80px', // GAP BELOW NAVBAR
-      display: "flex",
-      marginLeft: '550px',
-      justifyContent: "center", // Center content horizontally
-      alignItems: "center", // Center content vertically if the content is smaller
-      width: "100%", // Full width of the page
-      boxSizing: 'border-box', // Ensure padding is included in the width/height calculation
-    },
+  minHeight: '30vh',
+  padding: '40px 20px',
+  fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+  marginTop: '80px', // GAP BELOW NAVBAR
+  display: "flex",
+  justifyContent: "center", // Center horizontally
+  alignItems: "center",     // Center vertically
+  width: "100%",
+  boxSizing: 'border-box',
+  // Remove marginLeft!
+},
     header: {
       textAlign: 'center',
       color: '#333',
