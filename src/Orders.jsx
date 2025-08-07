@@ -118,9 +118,7 @@ function Orders() {
         <h2 style={styles.header}>🧾 Your Order History.</h2>
         {orderProduct.length === 0 ? (
           <div style={styles.noOrders}>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"
-              alt="No Orders"
+           <img src="https://via.placeholder.com/150" alt="test" />
               style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
             />
             🛒 No purchase History available
