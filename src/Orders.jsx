@@ -5,6 +5,7 @@ function Orders() {
 
   const styles = {
    outerWrapper: {
+    marginLeft: '550px', // This will now work!
     backgroundColor: '#f4f6f8',
     minHeight: '30vh',
     padding: '40px 20px',
@@ -15,7 +16,7 @@ function Orders() {
     alignItems: "center",     // Center vertically
     width: "100%",
     boxSizing: 'border-box',
-    marginLeft: '550px', // This will now work!
+   
   },
     header: {
       textAlign: 'center',
