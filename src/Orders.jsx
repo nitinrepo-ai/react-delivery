@@ -10,9 +10,11 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: "550px",
-      Display:"block",
-      width:"400px"
+      display: "flex",
+      justifyContent: "center", // Center content horizontally
+      alignItems: "center", // Center content vertically if the content is smaller
+      width: "100%", // Full width of the page
+      boxSizing: 'border-box', // Ensure padding is included in the width/height calculation
     },
     header: {
       textAlign: 'center',
@@ -32,9 +34,10 @@ function Orders() {
       padding: '24px',
       borderRadius: '12px',
       boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-      width: '360px',
+      width: 'calc(33.33% - 24px)', // Make each order card 1/3 of the container's width
       listStyle: 'none',
       transition: 'transform 0.3s ease',
+      boxSizing: 'border-box', // To make sure padding is included in width calculation
     },
     orderInfo: {
       marginBottom: '16px',
@@ -109,19 +112,21 @@ function Orders() {
 
   return (
     <div style={styles.outerWrapper}>
-      <h2 style={styles.header}>🧾 Your Order History</h2>
-      {orderProduct.length === 0 ? (
-        <div style={styles.noOrders}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"
-            alt="No Orders"
-            style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
-          />
-          🛒 No purchase History available
-        </div>
-      ) : (
-        <ul style={styles.ordersGrid}>{orderItemsList}</ul>
-      )}
+      <div style={{ width: '100%', maxWidth: '1200px', padding: '0 20px' }}>
+        <h2 style={styles.header}>🧾 Your Order History</h2>
+        {orderProduct.length === 0 ? (
+          <div style={styles.noOrders}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"
+              alt="No Orders"
+              style={{ width: '150px', marginBottom: '20px', opacity: 0.8 }}
+            />
+            🛒 No purchase History available
+          </div>
+        ) : (
+          <ul style={styles.ordersGrid}>{orderItemsList}</ul>
+        )}
+      </div>
     </div>
   );
 }
