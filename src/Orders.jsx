@@ -6,7 +6,7 @@ function Orders() {
   const styles = {
    outerWrapper: {
     marginLeft: '550px', // This will now work!
-    backgroundColor: '#f4f6f8',
+    
     minHeight: '30vh',
     padding: '40px 20px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
