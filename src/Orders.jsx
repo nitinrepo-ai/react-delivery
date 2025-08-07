@@ -10,8 +10,9 @@ function Orders() {
       padding: '40px 20px',
       fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
       marginTop: '80px', // GAP BELOW NAVBAR
-      marginLeft: '550px', // ✅
-
+      marginLeft: "550px",
+      Display:"block",
+      width:"400px"
     },
     header: {
       textAlign: 'center',
