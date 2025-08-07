@@ -5,6 +5,7 @@ function Orders() {
 
   const styles = {
    outerWrapper: {
+     marginLeft: '550px',
     backgroundColor: '#f4f6f8',
     minHeight: '30vh',
     padding: '40px 20px',
