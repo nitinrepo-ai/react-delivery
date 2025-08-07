@@ -4,7 +4,7 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-  outerWrapper: {
+   outerWrapper: {
     backgroundColor: '#f4f6f8',
     minHeight: '30vh',
     padding: '40px 20px',
@@ -15,8 +15,7 @@ function Orders() {
     alignItems: "center",     // Center vertically
     width: "100%",
     boxSizing: 'border-box',
-    marginLeft: '550px', // Now this will work
-    // Remove marginLeft if you don't want it!
+    marginLeft: '550px', // This will now work!
   },
     header: {
       textAlign: 'center',
