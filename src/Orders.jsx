@@ -9,7 +9,8 @@ function Orders() {
     minHeight: '30vh',
     padding: '40px 20px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-    marginTop: '80px', // GAP BELOW NAVBAR
+    marginTop: '80px',// GAP BELOW NAVBAR
+     marginLeft:'550px',
     display: "flex",
     justifyContent: "center", // Center horizontally
     alignItems: "center",     // Center vertically
