@@ -4,7 +4,7 @@ function Orders() {
   const orderProduct = useSelector(globalState => globalState.Orders);
 
   const styles = {
-      backgroundColor: '#f4f6f8',
+  backgroundColor: '#f4f6f8',
   minHeight: '30vh',
   padding: '40px 20px',
   fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
@@ -14,6 +14,7 @@ function Orders() {
   alignItems: "center",     // Center vertically
   width: "100%",
   boxSizing: 'border-box',
+  marginLeft: '550px',
   // Remove marginLeft!
 },
     header: {
