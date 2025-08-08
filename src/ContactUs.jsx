@@ -54,7 +54,8 @@ function ContactUs() {
         padding: '10px',
         border: '1px solid #ccc',
         borderRadius: '6px',
-        fontSize: '15px'
+        fontSize: '15px',
+        marginRight:'45px'
     };
 
     const textAreaStyle = {
